@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* border: 1px red solid; */
+}
+::selection{
+    color: black;
+    background: none;
+}
+nav{
+    position: absolute;
+    background: transparent ;
+    width: 100%;
+    height: 5%;
+    padding: 0 10px;
+    z-index: 99;
+}
+.nav-bar{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    width: 50%;
+}
+ .nav-links ul{
+        width: 100%;
+        display: inline-flex;
+}
+.nav-links ul li{
+        list-style: none;
+        margin-left: 7px;
+}
+.nav-links ul li:first-child{
+        margin-left: 0px;
+}
+.nav-links ul li a{
+        text-decoration: wavy;
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 15px 15px;
+        border-radius: 10px;
+}
+.nav-links ul li a:hover{
+        color: greenyellow;
+    }
+.hero{
+    background:url(7xm.xyz848134.jpg);
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+.q{
+    text-align: center; 
+    color: white;
+    padding-top: 200px;
+}
+.q .title{
+    font-size: 40px;
+}
+.q .sub{
+    font-size: 130px;
+}
+.q .lom{
+    font-size: 20px;
+    font-style: italic;
+}
+.btns{
+    margin: 70px auto 0;
+}
+.btns a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: white;
+    background-color: greenyellow;
+    border-radius: 15px;
+}
+.btns a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+}
+.logo-ba {
+    background-color: rgb(245, 245, 243);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-direction: column;
+    place-items: center;
+}
+.r{
+    padding: 20px;
+    margin: 40px;
+}
+.flex .r p{
+    font-size: 50px;
+    font-family: bold;
+    padding: 20px;
+}
+.flex .r h2{
+    font-size: 20px;
+}
+.r button{
+    background-color: white;
+    padding: 20px;
+    border: none;
+    color: rgb(90, 148, 3);
+    text-decoration: underline;
+}
+.t{
+    padding: 10px;
+}
+.t h1{
+    font-size: 50px;
+    padding: 20px;
+}
+.y h1{
+    font-size: 50px;
+    padding: 20px;
+}
+.a h1{
+    font-size: 60px;
+    text-align: center;
+    font-weight: 500;
+}
+.a h2{
+    font-size: 15px;
+    text-align: center;
+}
+.flex-con{
+    display: flex;
+    justify-content: space-around;
+}
+.flex-con h1{
+    font-size: 20px;
+}
+.see{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(54, 107, 0);
+    text-decoration: underline;
+}
+.article{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.article .blog{
+    margin: 30px;
+}
+.article .blog h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.write{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.write h2{
+    position: relative;
+    left: -90px;
+    text-decoration: underline;
+    color: yellowgreen;
+}
+.write h3{
+    font-size: 27px;
+}
+.books{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+.book-1 h2{
+    border: 3px yellowgreen solid;
+    width: 25%;
+    height: 10%;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+} 
+footer{
+    background: url(1.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer h2{
+    font-size: 50px;
+    color: yellowgreen;
+}
+footer h3{
+    font-size: 60px;
+    color: green;
+}
+@media screen and (max-width: 600px) {
+    .nav-bar{
+        position: relative;
+        left: -200px;
+        flex-direction: column;
+    }
+    .nav-bar .logo{
+        width: 100%;
+        flex-direction: column;
+        display: inline-block;
+        /* font-size: 20px; */
+    }
+    .nav-bar .nav-links{
+        position: relative;
+        left: 330px;
+        top: -57px;
+    }
+    .nav-links ul{
+        width: 100%;
+        display: inline-block;
+        flex-direction: column;
+    }
+    .nav-links ul li{
+        list-style: none;
+        margin-left: 7px;
+    }
+    .nav-links ul li:first-child{
+        margin-left: 0px;
+    }
+    .nav-links ul li a{
+        text-decoration: wavy;
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 15px 15px;
+        border-radius: 10px;
+    }
+    .nav-links ul li a:hover{
+        color: greenyellow;
+    }
+    .sub{
+        font-size: 40px !important;
+    }
+    .lom{
+        font-size: 8px;
+    }
+    .logo-ba img{
+        width: 50px;
+    }
+    .flex{
+        flex-direction: column;
+        /* margin: 10px; */
+    }
+    
+    .a h1{
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .a h2{
+        font-size: 25px;
+    }
+    .flex-con{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    .article{
+        font-size: 20px;
+        width: fit-content;
+        flex-direction: column;
+    }
+    .write h2{
+        position: relative;
+        left: 10px;
+    }
+    .write h3{
+        position: relative;
+        left: 60px;
+        
+    }
+    .books{
+        flex-direction: column;
+    }
+    .book-1 h2{
+        border: 3px yellowgreen solid;
+        width: 50%;
+        height: 10%;
+        border-radius: 10px;
+        align-items: center;
+        text-align: center;
+    }
+    .book-2{
+        padding: 10px;
+    }
+    footer{
+        align-items: center;
+    }
+    footer h2{
+        font-size: 40px;
+    }
+    footer h3{
+        font-size: 20px;
+    }
+}
